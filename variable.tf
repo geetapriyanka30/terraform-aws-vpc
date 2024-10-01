@@ -69,3 +69,25 @@ variable "database_subnet_group_tags" {
 variable "aws_nat_gateway_tags" {
   default = {}
 }
+
+variable "aws_route_table_public_tags"{
+  default = {}
+}
+
+variable "aws_route_table_private_tags"{
+  default = {}
+}
+
+variable "aws_route_table_database_tags"{
+  default = {}
+}
+
+
+variable "is_vpc_peering_required"{
+  type = bool 
+    default = false
+  }
+
+variable "vpc_peering_tags"{
+  default = {}
+}
